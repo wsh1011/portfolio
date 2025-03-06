@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+/* 식용곤충 페이지 내용영역 */
+
+
+#content .content_area{width: 100%;} 
+#content .content_area .edible{background: url(../images/content3/edible_back.png);}
+

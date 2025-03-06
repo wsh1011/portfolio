@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+/* 곤충생태체험관 페이지 내용영역 */
+
+.content_area{width:100%;}
+.content_area .tab_wrap {width: 1400px; margin: 0 auto; display: flex; gap: 10px;
+    justify-content: center; border: 1px solid red;}
+.tab_wrap li a {
+    background-color: orange; color: #333; padding: 10px; transition: all .5s ease-out;
+}
+.tab_wrap li.active a {
+    background-color: cornflowerblue; color: #fff;
+
+    font-size: 2.5rem;
+}
+
+.content_area .content_inner{width: 2000px; position: relative; top: 0; left: 50%;
+     transform: translateX(-50%);}
+.content_area .content_inner section>div{
+    width: 100%; 
+    /* ??? */
+    display: flex; 
+    justify-content: space-between; padding: 50px 0;  background: #FCF7EA;
+    border: 1px solid orange;}
+.content_area .content_inner section>div div{width: 500px; margin-right: 300px;}
+.content_area .content_inner section div img{width: 600px; margin-left: 300px;}
+.content_area .content_inner section h3{font-size: 2.5rem; font-weight: bold; margin: 100px 0 50px 0;}
+.content_area .content_inner section .floor_info{border-top: 2px solid #8BB7B6; padding: 30px 0;}
+.content_area .content_inner section .floor_info p{font-size: 1.25rem; margin-bottom: 10px;}
+.content_area .content_inner section .floor_info>div{border: 2px solid #8BB7B6; margin-top: 100px; padding: 20px 0;
+    box-sizing: border-box;}
+.content_area .content_inner section .floor_info>div h4{font-size: 1.5rem; font-weight: bold; margin:0 0 20px 20px;}
+.content_area .content_inner section .floor_info>div div{display: flex; justify-content: space-evenly;}
+.content_area .content_inner section .floor_info>div div li{font-size: 1.25rem; margin-bottom: 10px;}
+.content_area .content_inner section .floor_info>div div li span{font-size: 1.88rem; margin-right: 20px;}
+
+.content_area .content_inner section>ul{width: 1400px; margin: 0 auto; margin-top: 100px; border: 1px solid pink;}
+.content_area .content_inner section>ul li{display: flex; font-size: 1.25rem; margin-bottom: 100px;}
+.content_area .content_inner section>ul li span{font-size: 1.5rem; font-weight: bold;}
+.content_area .content_inner section>ul li img{width: 500px;}
+
+
+
+
+/* 
+.content_inner > section { 
+    display: none;
+    width: 500px;
+    height: 200px;
+    background-color: #ccc;
+    padding: 20px;}
+.content_inner > section.active {
+    display: block;
+} */
+

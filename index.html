@@ -1,0 +1,483 @@
+<?
+    session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+
+    //$userid = $_SESSION['userid'];
+    //$username = $_SESSION['username'];
+    //$usernick = $_SESSION['usernick'];
+    //$userlevel = $_SESSION['userlevel'];
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예천곤충연구소</title>
+
+    <link rel="shortcut icon" type="image/x-icon"  href="./favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./common/css/aos.css">
+    <link rel="stylesheet" href="./common/css/common.css">
+    <link rel="stylesheet" href="./maincss/mainlayout.css">
+
+    
+</head>
+<body>
+    <div class="skipNav">
+        <a href="#content">본문 바로가기</a>      
+        <a href="#gnb">글로벌 네비게이션 바로가기</a>
+    </div>
+       
+    <div class="wrap">
+       
+        <? include "./common/main_header.html" ?>
+
+       <div class="visual_container">
+            <div class="visual">
+                <div class="gallery">
+                    <ul>
+                        <li class="link1">
+                            <img src="./images/visual1.jpg" alt='' >
+                            <span>Welcome to the land of insects</span>
+                            <span>사계절이 즐거운 곳</span>
+                        </li>
+                        <li class="link2"><img src="./images/visual2.jpg" alt='' >
+                            <span>Welcome to the land of insects</span>
+                            <span>신비한 곤충과 다양한 볼거리가 가득한 곳</span> 
+                        </li>
+                        <li class="link3"><img src="./images/visual3.jpg" alt='' >
+                            <span>Welcome to the land of insects</span>
+                            <span>곤충들의 신나는 이야기가 가득한 곳</span>
+                        </li>
+                    </ul>
+                    <!-- <span class="material-symbols-outlined">
+                    arrow_cool_down
+                    </span> -->
+                </div>
+        
+                <div class="dock">
+                    <span class="mbutton  btn1" ></span>   <!-- 시각장애인에게도 필요한 서비스라고 판단되면 a태그 써도됨 --> 
+                    <span class="mbutton  btn2" ></span>
+                    <span class="mbutton  btn3" ></span>
+                    
+                    <span class="ps" ><span class="hidden">stop</span><i class="fa-regular fa-circle-stop"></i></span>
+                </div>
+         
+                <!-- <span class="btn btnLeft">left</span>
+                <span class="btn btnRight">right</span> -->
+            </div>
+       </div>
+
+
+
+
+        <article id="content">
+            <h2 class="hidden">본문콘텐츠영역</h2>
+
+            <section class="introduce">
+                <div class="introduce_inner">
+
+
+                    <!-- <div data-aos="fade-up"
+     data-aos-duration="3000"  data-aos-delay="300"> -->
+                    <h3 data-aos="fade-up" data-aos-delay="200">연구소 소개</h3>
+                        <div class="introduce_content">
+                            <div class="introduce_left">
+                                <ul class="intro_txt">
+                                    <li data-aos="fade-up" 
+                                    data-aos-delay="700">우리는 지구의 오랜 식구이며 백만가지가 넘는 가장 많은 동물입니다.</li>
+                                    <li data-aos="fade-up"
+                                    data-aos-delay="900">우리가 사는 세상은 여러분에게 익숙한 모습일 수도, 혹은 상상도 못한 미지의 세계일 수도 있어요.</li>
+                                    <li data-aos="fade-up"
+                                    data-aos-delay="1100">사람들은 말합니다. 우리를 더 잘 알게 될수록 더 신비로워 진다고.<br>
+                                        우리는 곤충입니다.</li>
+                                    <li data-aos="fade-up"
+                                    data-aos-delay="1300">그리고 지금 <span>예천곤충연구소</span>&<span>곤충생태원</span>에 삽니다.</li>
+                                </ul>
+                                <ul class="intro_img">
+                                    <li><a href="#"><img src="./images/introthum0.jpg" alt="소개사진1"></a></li>
+                                    <li><a href="#"><img src="./images/introthum1.jpg" alt="소개사진2"></a></li>
+                                    <li><a href="#"><img src="./images/introthum2.jpg" alt="소개사진3"></a></li>
+                                    <li><a href="#"><img src="./images/introthum3.jpg" alt="소개사진4"></a></li>
+                                </ul>
+                            </div>
+                            <div class="introduce_right" data-aos="fade-left" data-aos-duration="500" data-aos-delay="200">
+                                <img src="./images/intro0.jpg" alt="">
+                            </div>
+                        </div>
+                </div>
+            </section>
+
+           <div class="ecomuseum_container">
+             <section class="ecomuseum">
+                     <div class="ecomuseum_inner">
+                         <div class="ecomuseum_left move_div1">
+                             <h3>체험시설</h3>
+                             <p>어쩌구 저쩌구 꿀벌</p>
+                               <div class="ecomuseum_leftinner">
+                                   <h4>전시체험관</h4>
+                                   <p>어쩌구 곤충화석 액자만들기, 나무 곤충만들기, 유충기르기등 다양한 체험장이 있는 멀티체험관과 
+                                     3D영상관, 곤충들의 역사, 생태, 자원 등을 보고, 느끼고, 경험 할 수 있는 곤충생태체험관</p>
+                                   <a class="more" href="#">더보기</a>
+                               </div>
+                         </div>
+                         <div class="ecomuseum_right move_div2">
+                         
+                             <ul>
+                                 <li>
+                                     <a href="#">
+                                         <img src="./images/ecomuseum1.jpg" alt="">
+                                         <h5>곤충생태체험관</h5>
+                                         <dl>
+                                             <dt>곤충생태체험관</dt>
+                                             <dd>저쩌구 곤충들의 역사, 생태, 자원 등을 보고, 느끼고, 경험 할 수 있는 곤충생태체험관
+                                                 <span class="material-symbols-outlined">
+                                                     add_circle
+                                                     </span>
+                                             </dd>
+                                             
+                                         </dl>
+                                     </a>
+                                 </li>
+                                 <li>
+                                     <a href="#">
+                                         <img src="./images/ecomuseum2.jpg" alt="">
+                                         <h5>멀티체험관</h5>
+                                         <dl>
+                                             <dt>멀티체험관</dt>
+                                             <dd>저쩌구 곤충들의 역사, 생태, 자원 등을 보고, 느끼고, 경험 할 수 있는 곤충생태체험관
+                                                 <span class="material-symbols-outlined">
+                                                     add_circle
+                                                     </span>
+                                             </dd>
+                                             
+                                         </dl>
+                                     </a>
+                                 </li>
+                             </ul>
+            
+                            <ul>
+                              <li>
+                                  <a href="#">
+                                      <img src="./images/ecomuseum3.jpg" alt="">
+                                      <h5>곤충체험온실</h5>
+                                      <dl>
+                                         <dt>곤충체험온실</dt>
+                                         <dd>저쩌구 곤충들의 역사, 생태, 자원 등을 보고, 느끼고, 경험 할 수 있는 곤충생태체험관    
+                                             <span class="material-symbols-outlined">
+                                                 add_circle
+                                                 </span>
+                                         </dd>
+            
+                                     </dl>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#"><img src="./images/ecomuseum4.jpg" alt="">
+                                      <h5>나비관찰원</h5>
+                                      <dl>
+                                         <dt>나비관찰원</dt>
+                                         <dd>저쩌구 곤충들의 역사, 생태, 자원 등을 보고, 느끼고, 경험 할 수 있는 곤충생태체험관
+                                             <span class="material-symbols-outlined">
+                                                 add_circle
+                                                 </span>
+                                         </dd>
+                                         
+                                     </dl>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <img src="./images/ecomuseum5.jpg" alt="">
+                                      <h5>동굴곤충나라</h5>
+                                      <dl>
+                                         <dt>동굴곤충나라</dt>
+                                         <dd>저쩌구 곤충들의 역사, 생태, 자원 등을 보고, 느끼고, 경험 할 수 있는 곤충생태체험관
+                                             <span class="material-symbols-outlined">
+                                                 add_circle
+                                                 </span>
+                                         </dd>
+                                        
+                                     </dl>
+                                  </a>
+                              </li>
+                             </ul>
+                         
+                         </div>
+            
+                     </div>
+             </section>
+           </div>
+
+
+
+            <!-- <span class="material-symbols-outlined">
+                hive
+                </span> -->
+                <!-- <span class="material-symbols-outlined">
+                    fork_spoon
+                    </span> -->
+
+
+           <div class="sec_container">
+             <section class="study">
+            
+                  <h3>산업곤충연구</h3>
+                  <p>예천 곤충연구소는 꿀벌, 호박벌, 식용곤충을 연구하여<br>
+                     보다 나은 생활이 가능하도록 노력하고 있습니다.
+                  </p>
+                  <ul>
+                     <li class="scene">
+                        <a class="card" href="#">
+                             <div class="card_face front">
+                                 <span class="material-symbols-outlined">
+                                     emoji_nature
+                                 </span>
+                                 <h4>호박벌 연구성과</h4>
+                             </div>
+            
+                             <dl class="card_face back">
+                                 <dt>호박벌 연구성과</dt>
+                                 <dd>
+                                     <span>2013년</span> 수밀력 우수 삼원교배종의 여왕벌육성 선발 (농촌진흥청 잠사양봉소재과 공동)
+                                 </dd>
+                                 <dd>
+                                     <span>2014년</span>국가 꿀벌 정부장려품종 '장원' 등록</dd>
+                                 <dd>
+                                     <span>2015년</span> 국립 유전자원 관리기관 지정
+                                     <span class="material-symbols-outlined">
+                                         add_circle
+                                     </span>
+                                 </dd>
+                             </dl>
+                            
+                        </a>
+                     </li>
+            
+                     <li class="scene">
+                         <a class="card" href="#">
+                              <div class="card_face front">
+                                  <span class="material-symbols-outlined">
+                                     hive
+                                  </span>
+                                  <h4>꿀벌 연구성과</h4>
+                              </div>
+            
+                              <dl class="card_face back">
+                                  <dt>꿀벌 연구성과</dt>
+                                  <dd>
+                                      <span>2013년</span> 수밀력 우수 삼원교배종의 여왕벌육성 선발 (농촌진흥청 잠사양봉소재과 공동)
+                                  </dd>
+                                  <dd>
+                                      <span>2014년</span>국가 꿀벌 정부장려품종 '장원' 등록</dd>
+                                  <dd>
+                                      <span>2015년</span> 국립 유전자원 관리기관 지정
+                                      <span class="material-symbols-outlined">
+                                          add_circle
+                                      </span>
+                                  </dd>
+                              </dl>
+                             
+                         </a>
+                      </li>
+            
+                      <li class="scene">
+                         <a class="card" href="#">
+                              <div class="card_face front">
+                                  <span class="material-symbols-outlined">
+                                     fork_spoon
+                                  </span>
+                                  <h4>식용곤충 연구성과</h4>
+                              </div>
+            
+                              <dl class="card_face back">
+                                  <dt>식용곤충 연구성과</dt>
+                                  <dd>
+                                      <span>2013년</span> 수밀력 우수 삼원교배종의 여왕벌육성 선발 (농촌진흥청 잠사양봉소재과 공동)
+                                  </dd>
+                                  <dd>
+                                      <span>2014년</span>국가 꿀벌 정부장려품종 '장원' 등록</dd>
+                                  <dd>
+                                      <span>2015년</span> 국립 유전자원 관리기관 지정
+                                      <span class="material-symbols-outlined">
+                                          add_circle
+                                      </span>
+                                  </dd>
+                              </dl>
+                             
+                         </a>
+                      </li>
+                  </ul>
+            
+             </section>
+            
+            
+            
+             <section class="guide">
+               <div class="guide_inner">
+                   
+                     <div>
+                         <h3>이용안내</h3>
+                         <p>예천곤충연구소 & 곤충생태원은 항상 열려 있습니다. <br>
+                            오셔서 즐거운 추억과 희망을 간직하시길 바랍니다.</p>
+                         <a class="more" href="#">MORE+</a>
+                     </div>
+                           
+                     <ul>
+                         <li class="summer">
+                             <a href="#">
+                                 <div>
+                                    <span class="guidePic gpic0">
+                                       <i class="fa-solid fa-sun"></i>
+                                    </span>
+                                 </div>
+                                 <dl>
+                                     <dt>하절기
+                                         <span class="material-symbols-outlined add_circle1">
+                                             add_circle
+                                         </span>
+                                     </dt>
+                                     <dd>
+                                         운영시간- 09 : 00 ~ 18 : 00<br>
+                                         이용가능 시설-
+                                         수변생태원, 벌집테마원, 벅스하우스, 유아통통놀이터, 곤충테마 
+                                         놀이시설, 전망대, 동굴곤충나라
+                                     </dd>
+                                 </dl>
+                             </a>
+                         </li>
+                     
+                     
+                         <li class="winter">
+                             <a href="#">
+                                 <span class="guidePic gpic1">
+                                    <i class="fa-regular fa-snowflake"></i>
+                                </span>
+                                 <dl>
+                                     <dt>동절기
+                                        <span class="material-symbols-outlined add_circle1">
+                                            add_circle
+                                        </span>
+                                     </dt>
+                                     <dd>운영시간- 09 : 00 ~ 18 : 00<br>
+                                         이용가능 시설-
+                                         수변생태원, 벌집테마원, 벅스하우스, 유아통통놀이터, 곤충테마 
+                                         놀이시설, 전망대, 동굴곤충나라
+                                     </dd>
+                                 </dl>
+                             </a>
+                         </li>
+                     
+                     
+                         <li class="train gList">
+                             <a href="#">
+                                 <span class="guidePic gpic2">
+                                    <i class="fa-solid fa-train"></i>
+                                 </span>
+                                 <dl>
+                                     <dt>모노레일
+                                         <span class="material-symbols-outlined add_circle2">
+                                             add_circle
+                                         </span>
+                                     </dt>
+                                     <dd>운영시간- 09 : 00 ~ 18 : 00<br>
+                                         이용가능 시설-
+                                         수변생태원, 벌집테마원, 벅스하우스, 유아통통놀이터, 곤충테마 
+                                         놀이시설, 전망대, 동굴곤충나라
+                                     </dd>
+                                 </dl>
+                             </a>
+                         </li>
+                     </ul>
+               </div>
+             </section>
+            
+             <section class="issue">
+                    <? include "./lib/func.php"; ?>
+                    <div class="issue_inner">
+                        
+                        <h3>새로운 소식</h3>
+                        
+                        
+                        <a class="more" href="./notice/list.php">MORE+</a>
+                        
+
+                        <div class="slide_gallery_box" data-aos="fade-left"
+                        data-aos-duration="500"  data-aos-delay="200">
+                            <div class="slide_gallery">
+                                <ul>
+                                    <? latest_article("notice", 8, 30, 70); ?>
+                                </ul>
+                            </div>
+                        </div>
+                
+                        <div class="sub_menu_box">
+                            <a href="#" class="m1 button">
+                                <span class="material-symbols-outlined">
+                                arrow_back_ios
+                                </span>
+                            </a>
+                            <a href="#" class="m2 button">
+                                <span class="material-symbols-outlined">
+                                arrow_forward_ios
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                
+            
+            
+             </section>
+           </div>
+
+        </article>
+
+        <? include "./common/main_footer.html" ?>
+
+    </div>
+
+
+    <!--   메인공지팝업  -->
+       
+<div id="showimage" style="z-index:90;position:absolute; width:322px; right:50%;top:300px; margin-right: -700px;">
+    <script>
+      function closeWin(){
+         var chk = document.getElementById('Notice')
+         if ( chk.checked ) {
+               setCookie( "Notice", "done" , 1); //1이란 숫자는 1일간 안보임을 뜻합니다. 날짜는 자신에 맞게 수정하세요
+          }
+      }
+     if ( getCookie( "Notice" ) == "done" ) {
+         hidebox();
+     }
+   </script>
+      <div>
+            <img src="./images/pop1.png" alt="본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 만들어졌습니다. 홈페이지의 일부 내용과 기타 이미지 등은 그 출처가 따로 있음을 밝힙니다." />
+      </div>
+       <div style="font-size:12px;text-align:center;color:#666;">  <!--체크박스--> 
+         <input type="checkbox" name="Notice" id="Notice" value="" title="오늘은 이창을 열지 않음 선택상자"><label for="Notice">오늘은 이창을 열지 않음.</label>
+       <a href="#"  onclick="closeWin();hidebox();return false;"> [close] </a>
+    </div>
+</div>
+
+   
+    <script src="./mainjs/mainpopup.js"></script>
+
+    <script src="./common/js/aos.js"></script>
+    <script src="./common/js/jquery-1.12.4.min.js"></script>
+    <script src="./common/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="./common/js/jquery.easing.1.3.js"></script>
+    <script src="./common/js/common.js"></script>
+    <script src="./mainjs/mainjs.js"></script>
+
+</body>
+</html>

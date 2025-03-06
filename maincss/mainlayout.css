@@ -1,0 +1,244 @@
+@charset "utf-8";
+.visual_container{width: 100%; overflow: hidden;}
+.visual{position: relative; width: 2000px; top: 0; left: 50%; transform: translateX(-50%); background: #f8f8f8;}
+
+/* .visual{ position:relative;width:1000px; height:420px;
+        border:1px solid red; overflow:hidden}      */
+
+.gallery{position:relative;left:0; top:0; overflow:hidden; width:2000px; height:1050px;}
+.gallery li{
+        display:none; 
+        
+        position: absolute; left: 0; top: 0; width: 2000px; height: 1050px;
+}  /*li 3개가 겹쳐져서 효과가 자연스러워짐  */
+
+.gallery img{animation: ani 30s linear infinite;}
+@keyframes ani {
+    from {transform: scale(1);}
+    to {transform: scale(1.2);}
+}
+
+.gallery li span{position: absolute; left: 200px; opacity: 0; font-size: 50px; color: #fff;}
+.gallery li span:nth-of-type(1){top: 450px; font-family: "Comic Neue"; font-weight: 300; 
+        font-style: italic; font-size: 1.88rem;}
+.gallery li span:nth-of-type(2){top: 500px; font-weight: bold;}
+
+/* .gallery .link1 span{ left:  100px; top: 300px;} */
+
+.dock{width:340px; position:absolute; left:50%; bottom:150px; transform: translateX(-50%);}
+
+.dock .mbutton{ margin:6px 5px 0 5px; cursor:pointer; 
+    display:block; float: left; width:60px; height:5px;
+   background: rgba(255,255,255,.5); border-radius:5px;
+   transition: all .5s ease-out; position: relative;}
+.dock .mbutton::after{content: ''; display: block; width: 0; height: 5px;
+        border-radius: 5px; position: absolute; left:0; top:0; 
+        background:#53BCBE;}
+.dock .mbutton.on::after{
+        content: ''; width: 101%; 
+        transition: all 4.5s;
+        }
+
+.dock .ps{margin:-5px 10px 0 5px; cursor:pointer; 
+    display:block; float:right; width:25px; height:25px;}
+.dock .ps i{font-size: 30px; color: #fff;}   
+
+/* .visual .btn{display: block; width: 40px; height: 100px; background: red;
+        position: absolute;  top:40%;cursor:pointer; } */
+/*.visual .btnLeft{left:50%; margin-left: -800px;}   left:50%; margin-left: -800px; 이렇게해야 버튼이 항상 제자리에있음 */
+/* .visual .btnRight{left:50%; margin-left: 770px;}     */
+
+
+
+
+
+/* 연구소소개 */
+#content{}
+#content .sec_container{width: 100%; overflow: hidden;}
+
+#content .introduce{width: 100%; overflow: hidden;}
+#content .introduce .introduce_inner{width: 2000px; position: relative; top: 0; left: 50%; 
+        transform: translateX(-50%); padding: 200px 0;}
+#content .introduce .introduce_inner h3{font-size: 3.13rem; position: absolute; 
+        top: 160px; left: 300px;}
+#content .introduce .introduce_inner h3::after{content:'사람과 자연이 공생하는'; position: absolute;
+        top: -25px; left: 0; color: #8BB7B6; font-size: 1.3rem; font-weight: 500;}
+#content .introduce .introduce_content{display: flex;}
+#content .introduce .introduce_left{width: 100%; padding: 80px 0 30px 0; background: #FCF7EA;
+        border-radius: 0;}
+        /* 나중에 width: 1350px;  border-radius: 0 450px 0 0; */
+
+
+#content .introduce .introduce_left .intro_txt{width: 680px; margin-left: 300px;}
+#content .introduce .introduce_left .intro_txt li{font-size: 1.5rem; line-height: 2.5rem; text-align: justify;
+        margin-bottom: 20px;}
+#content .introduce .introduce_left .intro_txt li span{font-weight: bold;}
+#content .introduce .introduce_left .intro_txt li:nth-last-of-type(1){margin-bottom: 80px;}
+#content .introduce .introduce_left .intro_img{display: flex; justify-content: space-between;
+        overflow: hidden; margin-left: 300px; gap: 10px; width: 710px;}
+#content .introduce .introduce_left .intro_img li{width: 170px;}
+
+#content .introduce .introduce_right{position: absolute; width: 830px; top: 300px; right: 0; 
+         overflow: hidden;
+        border-radius: 15px 0 0 100px;}
+ /* 나중에 right: -830px; -> right: 0;*/
+
+/* 체험시설 */
+#content .ecomuseum_container{height:2000px; }
+#content .ecomuseum{width: 100%; background: url(../images/ecomuseum_back.jpg); height: 960px; position: sticky; top:100px; overflow: hidden;}
+#content .ecomuseum .ecomuseum_inner{width: 1400px; margin: 0 auto; display: flex; 
+                justify-content: space-between;}
+
+
+#content .ecomuseum_left{height: 540px; margin-top: 200px; 
+       top:100px;}
+/* #content .ecomuseum_inner .move_div1{position: sticky; top:100px;} */
+
+
+#content .ecomuseum_left h3{font-size: 3.13rem; margin:0 0 50px;}
+#content .ecomuseum_left p{font-size: 1.5rem; line-height: 2.5rem; margin-bottom: 20px;}
+#content .ecomuseum_left .ecomuseum_leftinner{width: 337px; border-top: 4px solid #8BB7B6;}
+#content .ecomuseum_left .ecomuseum_leftinner h4{font-size: 1.88rem; margin: 30px 0 20px;}
+#content .ecomuseum_left .ecomuseum_leftinner p{font-size: 1.25rem; line-height: 1.8rem; 
+        text-align: justify;margin-bottom: 50px;}
+#content .ecomuseum_left .ecomuseum_leftinner .more{width: 150px; font-size: 1.25rem; 
+        text-align: center; border-radius: 20px; border: 1px solid #53BCBE;
+        padding: 10px 0;}
+
+#content .ecomuseum_right{width: 766px; display: flex; gap: 30px; justify-content: space-between; position: relative; top:0 }
+#content .ecomuseum_right li{border-radius: 25px; overflow: hidden; position: relative; margin-bottom: 30px;
+                 box-shadow: 1px 1px 15px 1px rgba(0,0,0,.3);}
+#content .ecomuseum_right li h5{font-size: 20px; position: absolute; bottom: 50px; left: 30px;
+                color: #f8f8f8;}
+
+#content .ecomuseum_right li dl{width: 368px; height: 446px; background: #8BB7B6;
+                position: absolute; left: 0; top: 0; opacity: 0; transition: all .5s ease-out;}
+#content .ecomuseum_right li:hover dl{opacity: 1;}
+#content .ecomuseum_right li dt{font-size: 1.5rem; font-weight: bold; color: #fff; 
+                text-align: center; margin: 150px 0 30px;}
+#content .ecomuseum_right li dd{font-size: 1rem; color: #fff; text-align: justify; 
+        line-height: 1.5rem; margin: 0 70px;}
+#content .ecomuseum_right li dd span{color: #fff; text-align: center;transform: translate(10px, 7px);}
+#content .ecomuseum_right ul:nth-of-type(1){transform: translateY(500px);}
+#content .ecomuseum_right ul:nth-of-type(2){transform: translateY(300px);}
+
+
+/* 산업곤충연구 */
+#content .study{width: 1400px; margin: 0 auto; padding: 100px 0;}
+#content .study h3{font-size: 3.13rem; margin-bottom: 40px; text-align: center;}
+#content .study p{font-size: 1.5rem; line-height: 2.5rem; margin-bottom: 40px; text-align: center;}
+#content .study ul{display: flex; justify-content: space-between;}
+#content .study ul .scene{width: 410px; height: 460px; perspective: 600px;}
+#content .study ul .scene .card{width: 100%; height: 100%; 
+        position: relative;
+        transition: transform .5s ease-out; transform-style: preserve-3d;}
+#content .study ul .scene:hover .card{transform: rotateY(180deg);}
+#content .study ul .scene .card_face{position: absolute; width: 100%; height: 100%; 
+        backface-visibility: hidden; border-radius: 0 50px 0 50px;}
+#content .study ul .scene .card .front{background: #CCDADE;}
+#content .study ul .scene .card .front span{font-size: 200px; color: #f8f8f8; margin: 100px 25% 50px;}
+#content .study ul .scene .card .front h4{font-size: 1.88rem; text-align: center; color: #fff;}
+#content .study ul .scene .card .back{background: #FBF3E1; transform: rotateY(180deg);}
+#content .study ul .scene .card .back dt{font-size: 1.5rem; font-weight: bold; text-align: center; 
+        margin: 100px 0 30px;}
+#content .study ul .scene .card .back dd{font-size: 1rem; text-align: justify; 
+        line-height: 1.5rem; margin: 0 70px;}
+#content .study ul .scene .card .back dd span{font-weight: bold;}
+#content .study ul .scene .card .back dd span:nth-last-child(1){margin: 20px }
+
+/* 이용안내 */
+#content .guide{width: 2000px; height: 900px; position: relative; top: 0; left: 50%; transform: translateX(-50%); 
+        background: url(../images/guide0.jpg);}
+#content .guide_inner{width: 1400px; margin: 0 auto; padding: 200px 0 0 0; }
+#content .guide_inner div{text-align: right; overflow: hidden;}
+
+#content .guide_inner h3{font-size: 3.13rem; margin-bottom: 50px;}
+#content .guide_inner p{font-size: 1.5rem; line-height: 2.5rem;}
+#content .guide_inner div a{width: 150px; font-size: 1.25rem; text-align: center; border-radius: 20px; 
+        border: 1px solid #53BCBE; padding: 10px 0; margin: 30px 0; float: right;}
+
+#content .guide_inner ul{display: flex; gap: 10px; width: 1400px; height: 300px; position:relative; justify-content: space-between;}
+#content .guide_inner ul li{transition: all .5s ease-out; width: 33.33%; border-radius: 30px; 
+         background: rgba(255,255,255,.3); backdrop-filter: blur(10px); padding: 60px 50px 50px 50px;}
+
+/* #content .guide_inner .summer, #content .guide_inner .winter{border-right: 1px solid #f8f8f8;} */
+/* #content .guide_inner .summer{width:400px; background: rgba(255,255,255,.3); 
+        backdrop-filter: blur(10px);}  */
+
+#content .guide_inner ul li a .guidePic{font-size:60px; color:#333; position:absolute; right:50px; top:20px;}
+#content .guide_inner ul dt{font-size: 1.5rem; font-weight: bold; margin-bottom: 20px; color: #333;}
+#content .guide_inner ul dt .add_circle1{font-size:40px; position: absolute; top: 60px; left: 130px;}
+#content .guide_inner ul dt .add_circle2{font-size:40px; position: absolute; top: 60px; left: 150px;}
+#content .guide_inner ul dd{font-size: 1.25rem; text-align:justify; line-height: 1.88rem; color: #333;}
+
+#content .guide_inner ul .summer:hover{background: #FBF3E1;}
+
+#content .guide_inner ul .winter:hover{background: #CCDADE;}
+
+#content .guide_inner ul .train:hover{background: #8BB7B6; }
+
+
+
+
+/* .gpicOn1{transform:rotate(90deg); transform-origin: center center;} */
+/* #content .guide_inner ul .season:hover .guidePic{transform: rotate(90deg); 
+     transform-origin: center; } */
+/* #content .guide_inner ul .season.guideOn::after{
+        /* content: ''; width: 101%; 
+        transition: all 4.5s; */
+       /* content:' '; display:block; width:100px; height:300px; color:#f8f8f8; position: absolute; top:0; right:0;} */
+/* #content .guide_inner ul .season{transition: all .5s ease-out;} */
+/* #content .guide_inner ul .season .guideOn::after{content:' '; display:block; width:3px; height:100%; background:#f8f8f8; 
+        position: absolute; top:0; right:0;} */
+/* #content .guide_inner ul .season a:hover .guidePic{color:#333; transform: rotate(360deg);} */
+/* #content .guide_inner ul li a span i.gpicOn{transform: rotate(360deg);} */
+/* #content .guide_inner ul li a span i{transform: rotate(360deg);} */
+/* .gpicOn2{??:scale(0.5);} */
+
+
+
+
+/* 게시판 */
+#content .issue{width: 100%; background: #fdfdfd;}
+#content .issue .issue_inner{width: 2000px; position: relative; top: 0; left: 50%; transform: translateX(-50%);
+        padding: 130px 0 130px 0;}
+#content .issue .issue_inner h3{font-size: 3.13rem; margin: 0 0 80px 300px;}
+#content .issue .issue_inner h3::before{content: 'Notice'; display: block; font-size: 1.25rem;}
+
+#content .issue .issue_inner .more{width: 150px; font-size: 1.25rem; text-align: center; border-radius: 20px; 
+        border: 1px solid #53BCBE; padding: 10px 0; position: absolute; top: 220px; right: 100px;}
+
+
+#content .issue .issue_inner .slide_gallery_box{width:1650px; margin-left:300px; 
+        position:relative; overflow: hidden;}
+#content .issue .issue_inner .slide_gallery{position: relative; left: 0; top: 0; padding: 20px 0;
+        width: 5280px; display: flex;}
+
+
+
+#content .issue .issue_inner ul{display:flex; 
+        /* justify-content: space-between;  */}
+
+#content .issue .issue_inner ul li{width: 330px; position: relative; transition: all .5s ease-out;}
+#content .issue .issue_inner ul li:hover{transform: scale(1.1)}
+#content .issue .issue_inner ul li:hover .dot span:nth-of-type(3){color: #53BCBE; transform: scale(1.5)}
+
+#content .issue .issue_inner ul li img{width: 300px; margin: auto 15px;}
+#content .issue .issue_inner ul dl{position: absolute; top: 75px; left: 50%; text-align: center;
+        transform: translateX(-50%);}
+#content .issue .issue_inner ul dt{font-size: 1.25rem; font-weight: bold; margin-bottom: 10px; }
+#content .issue .issue_inner ul dd{font-size: 1.13rem; text-align: justify;}
+
+#content .issue .issue_inner ul .dot{font-size: 1.13rem;  width: 200px; height: 50px; }
+#content .issue .issue_inner ul .dot span{display: block; margin-bottom: 15px;}
+#content .issue .issue_inner ul .dot span:nth-of-type(1){ overflow: hidden;
+        text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp:2; -webkit-box-orient: vertical;word-wrap:break-word; } 
+#content .issue .issue_inner ul .dot span:nth-of-type(2), #content .issue .issue_inner ul .dot span:nth-of-type(3){text-align: center;}
+
+
+#content .issue_inner .sub_menu_box{position: absolute; top: 240px; right:280px;
+        display: flex; }
+#content .issue_inner .sub_menu_box .button{padding: 10px;}
+#content .issue_inner .sub_menu_box .m1{margin-right: 20px;}
+
+

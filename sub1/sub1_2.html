@@ -1,0 +1,129 @@
+<?
+    session_start();
+    @extract($_GET);
+    @extract($_POST);
+    @extract($_SESSION);
+
+    //$userid = $_SESSION['userid'];
+    //$username = $_SESSION['username'];
+    //$usernick = $_SESSION['usernick'];
+    //$userlevel = $_SESSION['userlevel'];
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연구소소개_설립목적</title>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    <link rel="stylesheet" href="../common/css/aos.css">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub1commom.css">
+    <link rel="stylesheet" href="./css/sub1_content2.css">
+    
+</head>
+<body>
+    <div class="skipNav">
+        <a href="#content">본문 바로가기</a>      
+        <a href="#gnb">글로벌 네비게이션 바로가기</a>
+    </div>
+
+    <div class="wrap">
+
+        <? include "../common/sub_header.html" ?>
+
+
+        <div class="visual">
+            <strong>연구소소개</strong>
+        </div>
+
+        <div class="sub_nav">
+            <ul>
+                <li><a href="./sub1_1.html">소장인사말</a></li>
+                <li><a class="current" href="./sub1_2.html">설립목적</a></li>
+                <li><a href="./sub1_3.html">주요연혁</a></li>
+                <li><a href="./sub1_4.html">조직도</a></li>
+            </ul>
+        </div>
+
+        <article id="content">
+            <div class="title_area">
+                <div class="line_map">
+                    home > 연구소소개 > <strong>설립목적</strong>
+                </div>
+                <h2>설립목적</h2>
+                <p>Our Vision?..</p>
+            </div>
+
+            <div class="content_area">
+                <div class="content_inner">
+                    <section class="purpose">
+                        <h3>설립목적</h3>
+                        <div class="purpose_inner">
+                            <div class="problem">
+                                <p>해결과제</p>
+                                <ul>
+                                    <li>
+                                        <img src="./images/content2/temporary.png" alt="">
+                                        <span>농업 경쟁력 강화</span>
+                                    </li>
+                                    <li>
+                                        <img src="./images/content2/temporary.png" alt="">
+                                        <span>주민 소득 증대</span>
+                                    </li>
+                                </ul>
+                                <p>개방화 국제화 시대를 맞아 열악한 농업의 경쟁력을 강화와 주민 소득을 증대가 필요해짐</p>
+                            </div>
+                            <div class="solution">
+                                <p>해결방안</p>
+                                <ul>
+                                    <li>
+                                        <img src="./images/content2/temporary.png" alt="">
+                                        <p>친환경 농업 육성</p>
+                                    </li>
+                                    <li>
+                                        <img src="./images/content2/temporary.png" alt="">
+                                        <p>곤충 연구소 설립</p>
+                                    </li>
+                                </ul>
+                                <p>예천군의 농정방향을 화분매개곤충인 머리뿔 가위벌과 호박벌을 이용한 친환경농업 
+                                    육성에 두고 이 분야의 연구개발을 위하여 1997년에 곤충연구소를 설립</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="process">
+                        <h3>설립과정</h3>
+                        <ul>
+                            <li><img src="./images/content2/temporary.png" alt="">화분매개곤충 최적지 선정</li>
+                            <li><img src="./images/content2/temporary.png" alt="">전문연구소 유치 승인</li>
+                            <li><img src="./images/content2/temporary.png" alt="">예천군 곤충연구소 설립</li>
+                            <li><img src="./images/content2/temporary.png" alt="">애플밸리지구 지정</li>
+                            <li><img src="./images/content2/temporary.png" alt="">2007 예천군 곤충 바이오 엑스포</li>
+                        </ul>
+                    </section>
+                </div>    
+            </div>
+
+        </article>
+
+
+        <? include "../common/sub_footer.html" ?>
+        
+        
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/56f9c027c1.js" crossorigin="anonymous"></script>
+
+    <script src="../common/js/aos.js"></script>
+    <script src="../common/js/jquery-1.12.4.min.js"></script>
+    <script src="../common/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="../common/js/jquery.easing.1.3.js"></script>
+    <script src="../common/js/common.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+/* 산업곤충연구 페이지 내용영역 */
+
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
+
+
+
+.content_area{width: 100%;}
+
+.content_area .bumble_char{width: 1200px; margin: 0 auto; margin-bottom: 300px;}
+.content_area .bumble_char .bumble_info{position: relative;}
+
+.content_area .bumble_char h3{font-size: 2.50rem;
+    margin-bottom: 150px;}
+.content_area .bumble_char .bumble_info div img{width: 550px;}
+.content_area .bumble_char .bumble_info dl{position: absolute; top: 130px; right: 0; border: 3px solid #eee; border-radius: 30px; 
+    box-shadow: 2px 2px 15px #ccc; padding: 30px 70px; background: rgba(255, 255, 255, .7);}
+.content_area .bumble_char .bumble_info dt{font-size: 1.5rem; font-weight: bold;}
+.content_area .bumble_char .bumble_info dd{font-size: 1.25rem; text-align: justify; line-height: 2.25rem; margin-bottom: 30px;}
+.content_area .bumble_char .bumble_info dd:nth-last-of-type(1){margin-bottom: 0;}
+.content_area .bumble_char .bumble_info span{color: #e8e8e8; font-family: "Mr Dafoe", serif; font-size: 3rem; 
+    position: absolute; }
+.content_area .bumble_char .bumble_info span:nth-of-type(1){top: 10px; left: -50px;}
+.content_area .bumble_char .bumble_info span:nth-of-type(2){top: 30px; left: 450px;}
+.content_area .bumble_char .bumble_info span:nth-of-type(3){bottom: 10px; left: -50px;}
+
+
+
+
+
+
+
+
+.content_area .bumble_advan{margin-bottom: 200px; background: url(../images/content1/bee_back.jpg);
+    position: relative; width: 2000px; top: 0; left: 50%; transform: translateX(-50%); padding-bottom: 200px;}
+
+.content_area .bumble_advan .advaninner{width: 1400px; margin: 0 auto;}
+.content_area .bumble_advan .advaninner h3{font-size: 2.50rem; margin-bottom: 30px; 
+    /* color: #53BCBE;  */}
+.content_area .bumble_advan .advaninner>p{font-size: 1.25rem; text-align: justify; line-height: 2.25rem; 
+    margin-bottom: 100px;}
+.content_area .bumble_advan .advaninner ul{display: flex; justify-content: space-between; margin-bottom: 100px;}
+.content_area .bumble_advan .advaninner ul li{position: relative;}
+.content_area .bumble_advan .advaninner ul li img{opacity: .8; width: 230px;}
+.content_area .bumble_advan .advaninner ul li>p{font-size: 1.25rem; text-align: center; margin-top: 20px;}
+.content_area .bumble_advan .advaninner ul li div{background: url(../images/content1/up.png) no-repeat;
+    background-position: center; background-size: contain; width: 80px;
+    position: absolute; top: 10%; left: 50%; transform: translateX(-50%); font-size: 2rem;}
+.content_area .bumble_advan .advaninner ul li:nth-of-type(3) div{background: url(../images/content1/down.png) no-repeat;
+    background-position: center; background-size: contain;}
+
+.content_area .bumble_advan .advaninner div{background: rgba(255, 255, 255, .6); border-radius: 30px; padding: 50px 0; 
+    width: 1000px; margin: 0 auto; 
+    display: flex; justify-content: center; gap: 100px;}
+.content_area .bumble_advan .advaninner div dl{}
+.content_area .bumble_advan .advaninner div dt{line-height: 20px; font-weight: bold;}
+.content_area .bumble_advan .advaninner div dd{margin-bottom: 30px;}
+
+
+
+
+
+.content_area .bumble_study{position: relative; width: 2000px; top: 0; left: 50%; transform: translateX(-50%); 
+    padding-bottom: 200px;}
+.content_area .bumble_study h3{font-size: 2.50rem; margin-bottom: 150px; text-align: center;}
+.content_area .bumble_study div:nth-of-type(1){margin-bottom: 100px;}
+.content_area .bumble_study div .crop_img{height: 300px; background: lightsalmon; margin-bottom: 50px;}
+.content_area .bumble_study div:nth-of-type(1) div{text-align: center;}
+.content_area .bumble_study div:nth-of-type(1) div h4{font-size: 1.5rem;}
+.content_area .bumble_study div:nth-of-type(1) div p{font-size: 1.25rem; line-height: 2.25rem; }
+
+.crop{width:2000px; height:270px; clear:both; overflow: hidden;
+    border:2px solid #ccc; padding: 20px 0; }
+.crop .crop_box{ position:relative; left:0; top:0; width: 7040px;overflow:hidden} /* ul이 2개 들어가서 7040px, 대신 width:calc(320px*11*2);해도됨*/
+.crop ul{ float:left}
+.crop li{ float:left; width:320px; height:270px; position: relative; padding: 10px 0; 
+    box-sizing: border-box;}
+.crop li p{position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); color: #fff;}
+
+.content_area .bumble_study .study_info{}
+.content_area .bumble_study .study_info h4{font-size: 1.5rem; text-align: center; margin-bottom: 50px;}
+.content_area .bumble_study .study_info table{width: 1200px; margin: 0 auto;}
+.content_area .bumble_study .study_info th, .content_area .bumble_study .study_info td{padding: 20px 0;}
+.content_area .bumble_study .study_info td{text-align: center;}
+.content_area .bumble_study .study_info table thead{background: #ddd;} 
+.content_area .bumble_study .study_info tbody th{background: #e8e8e8;} 
+
+.content_area .bumble_study table th, .content_area .bumble_study table td{border: 1px solid #eee;}
+
+
+
+

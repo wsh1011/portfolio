@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+.wrap{width: 100%; overflow: hidden;} 
+/* 비주얼 공통 */
+.visual{width: 2000px; height: 400px; background:url(../images/visual1_maybe.jpg);
+position: relative; top: 0; left: 50%; transform: translateX(-50%);}
+.visual strong{font-size: 30px; color: #f8f8f8; position: absolute; 
+    width: 100%; text-align: center; top: 200px; left: 0;}
+
+
+/* 서브네비 공통 */
+.sub_nav{width: 100%; border-bottom: 1px solid #ccc;}
+.sub_nav ul{width: 1200px; margin:0 auto; display: flex; background: #fff;}
+.sub_nav ul li{width: 25%; text-align: center; box-sizing: border-box;}
+.sub_nav ul a{font-size: 1.2rem; font-weight: bold; padding: 20px 0;border-bottom: 3px solid transparent; transition: all .5s ease-out;}
+.sub_nav ul a:hover{color: #53BCBE; background: #fff; border-bottom: 3px solid #53BCBE;}
+.sub_nav ul a.current{color: #53BCBE; background: #fff; border-bottom: 3px solid #53BCBE;}
+
+
+
+/* title_area 공통 */
+#content{width: 100%;}
+#content .title_area{width: 1400px; margin:0 auto; position: relative; overflow: hidden;
+    /* background: pink; */
+}
+#content .title_area .line_map{position: absolute; right: 15px; top: 20px; color: #666;}
+/* span */
+#content .title_area h2{font-size: 60px; font-weight: bold; text-align: center; margin: 150px 0 30px;}
+#content .title_area p{font-size: 1.2rem; text-align: center; 
+    /* margin-bottom: 100px;  */
+    line-height: 2rem;}
+#content .title_area p span{font-size: 1.2rem; font-weight: bold; text-align: center; color: #53BCBE;}
+#content .title_area p::after{content:''; display: block; width: 100px; margin: 100px auto;
+    border-bottom: 3px solid #53BCBE;}

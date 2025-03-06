@@ -1,0 +1,95 @@
+<header id="headerArea">
+    <div class="header_inner">
+        <h1 class="logo"><a href="../index.html">예천곤충연구소 로고</a></h1>
+        <nav id="gnb">
+            <h2 class="hidden">글로벌네비게이션</h2>
+            <ul class="dropdownmenu">
+                <li class="m1 menu">
+                    <h3><a class="depth1" href="../sub1/sub1_1.html">연구소 소개</a></h3>
+                    <ul>
+                        <li><a href="../sub1/sub1_1.html">소장인사말</a></li>
+                        <li><a href="../sub1/sub1_2.html">설립목적</a></li>
+                        <li><a href="../sub1/sub1_3.html">주요연혁</a></li>
+                        <li><a href="../sub1/sub1_4.html">조직도</a></li>
+                    </ul>
+                </li>
+                <li class="m2 menu">
+                    <h3><a class="depth1" href="../sub2/sub2_1.html">체험관 & 생태원</a></h3>
+                    <ul>
+                        <li><a href="../sub2/sub2_1.html">곤충생태체험관</a></li>
+                        <li><a href="../sub2/sub2_2.html">멀티체험관</a></li>
+                        <li><a href="./sub2/sub2_3.html">곤충생태원</a></li>
+                    </ul>
+                </li>
+                <!-- <li class="m3 menu">
+                    <h3><a class="depth1" href="../sub3/sub3_1.html">곤충생태원</a></h3>
+                    <ul>
+                        <li><a href="../sub3/sub3_1.html">곤충체험온실</a></li>
+                        <li><a href="../sub3/sub3_2.html">나비관찰원</a></li>
+                        <li><a href="../sub3/sub3_3.html">동굴곤충나라</a></li>
+                    </ul>
+                </li> -->
+                <li class="m3 menu">
+                    <h3><a class="depth1" href="../sub3/sub3_1.html">산업곤충연구</a></h3>
+                    <ul>
+                        <li><a href="../sub3/sub3_1.html">호박벌</a></li>
+                        <li><a href="../sub3/sub3_2.html">꿀벌</a></li>
+                        <li><a href="../sub3/sub3_3.html">식용곤충</a></li>
+                    </ul>
+                </li>
+                <li class="m4 menu">
+                    <h3><a class="depth1" href="../notice/list.php">이야기마당</a></h3>
+                    <ul>
+                        <li><a href="../notice/list.php">공지사항</a></li>
+                        <li><a href="../encyclopedia/list.php">곤충자료실</a></li>
+                        <li><a href="../greet/list.php">채용공고</a></li>
+                    </ul>
+                </li>
+                <li class="m5 menu">
+                    <h3><a class="depth1" href="../sub5/sub5_1.html">이용안내</a></h3>
+                    <ul>
+                        <li><a href="../sub5/sub5_1.html">이용안내</a></li>
+                        <li><a href="../sub5/sub5_2.html">체험안내</a></li>
+                        <li><a href="../sub5/sub5_3.html">찾아오시는길</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <ul class="top_menu">
+            <? if(!$userid){  //로그인 안된 상태인가?  ?>                
+                
+                 <li><a href="../login/login_form.php">로그인</a></li>
+                 <li><a href="../member/member_check.html">회원가입</a></li>
+                 <li class="searchicon"><a href="#"><span class="material-symbols-outlined">
+                    search
+                    </span></a>
+                </li>
+
+            <? } else {  //로그인 된 상태인가? ?>                      
+                 
+                 <li><a href="../login/logout.php">로그아웃</a></li>
+                 <li><a href="../member/member_form_modify.php">정보수정</a></li>
+                 <li class="searchicon"><a href="#"><span class="material-symbols-outlined">
+                    search
+                    </span></a>
+                 </li>
+            <? } ?>
+        </ul>
+    </div>
+
+    <div class="insect_box">
+        <p>알고 싶은 곤충을 검색해 주세요.</p>
+        <form  name="board_form2" method="post" action="../encyclopedia/list.php?mode=search"> 
+
+            <label class="text" for="find">곤충이름</label>
+            <input type="hidden" id="find" name="find" value="subject">    <!-- type="hidden"은 text타입인데 화면에만 안보임 -->
+            
+            <label class="hidden" for="search">상품검색어입력</label>
+            <input type="text" id="search" name="search" required  placeholder="호박벌">
+            <input type="submit" class="search_btn" value="검색">
+
+        </form>
+        <a href="#" class="close_btn">닫기</a>
+    </div>
+
+</header>

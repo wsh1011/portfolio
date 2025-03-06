@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/* 소장인사말페이지 내용영역 */
+
+
+/* .content_area{width: 100%;} */
+.content_area{width: 1400px; margin: 0 auto;}
+.content_area .slogan1{width: 1000px; margin: 0 auto;}
+.content_area .slogan1 p{font-size: 24px; text-align: center; line-height: 2.25rem;}
+.content_area .slogan1 p span{color: #53BCBE; font-weight: bold;}
+.content_area .slogan1>p{margin-bottom: 50px;}
+.content_area .slogan1 p:nth-last-of-type(1){margin-bottom: 170px;}
+
+.content_area ul li:nth-of-type(odd){display: flex; gap: 100px; margin-bottom: 150px;}
+.content_area ul li:nth-of-type(2){display: flex; flex-direction: row-reverse; gap: 100px; margin-bottom: 150px;}
+.content_area ul li img{width: 700px; border-radius: 40px;box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, .4);}
+.content_area ul li:nth-of-type(2) div{margin: auto 0;}
+.content_area ul li:nth-of-type(3) div{margin: auto 0;}
+.content_area ul li div h3{font-size: 2.50rem; margin-bottom: 30px; color: #53BCBE;}
+.content_area ul li div h3:nth-of-type(2){text-align: right;}
+.content_area ul li div p{font-size: 1.25rem; text-align: justify; line-height: 2.25rem; 
+    margin-bottom: 20px;}
+.content_area ul li div p span{color: #53BCBE; font-size: 2rem; font-weight: bold;}
+
+
+.content_area .slogan2{width: 1400px; height: 350px; background: url(../images/content1/subintro4.jpg);
+    border-radius: 40px; margin-bottom: 200px; 
+    display: flex; justify-content: center; align-items: center; background-attachment: fixed;}
+.content_area .slogan2 div{width: 800px; margin: 0 auto;}
+.content_area .slogan2 div p{color: #fff; text-align: justify;}
+.content_area .slogan2 div p:nth-of-type(1){font-size: 2rem;}
+.content_area .slogan2 div p:nth-of-type(2){font-size: 1.5rem; text-align: right;}
+.content_area .slogan2 div p:nth-of-type(2) span{font-weight: bold; font-size: 2.25rem;}

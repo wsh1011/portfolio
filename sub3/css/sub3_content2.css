@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+/* 꿀벌 페이지 내용영역 */
+
+
+.content_area{width: 100%;} 
+.content_area .research{width: 1200px; margin: 0 auto; margin-bottom: 300px;}
+.content_area .research h3{font-size: 2.5rem; margin-bottom: 150px;}
+.content_area .research .honeybee_info{position: relative;}
+.content_area .research .honeybee_info div:nth-of-type(1){width: 550px;}
+.content_area .research .honeybee_info div:nth-of-type(2),.content_area .research .honeybee_info div:nth-of-type(3){
+    background: rgba(255, 255, 255, .7); border: 3px solid #eee; border-radius: 30px; box-shadow: 2px 2px 15px #eee;
+    box-sizing: border-box; padding: 30px; text-align: center;
+}
+
+.content_area .research .honeybee_info div:nth-of-type(2){width: 450px; height: 300px; 
+    position: absolute; top: 100px; left: 500px;
+}
+.content_area .research .honeybee_info div:nth-of-type(2) img{margin-right: 30px;}
+.content_area .research .honeybee_info div:nth-of-type(3){width: 450px; height: 320px; background: rgba(255, 255, 255, .7); 
+    position: absolute; top: 350px; right:0;
+}
+.content_area .research .honeybee_info div p{font-size: 1.25rem; text-align: justify; line-height: 2.25rem; margin-top: 20px;}
+
+
+
+
+.content_area .center{}
+.content_area .center .task{
+    width: 1400px; margin: 0 auto; 
+    margin-bottom: 200px;}
+.content_area .center .task div{display: flex;}
+.content_area .center .task h4{font-size: 2.5rem; margin-bottom: 150px;}
+.content_area .center .task .preserve{width: 1200px; box-sizing: border-box; border-radius: 30px; padding: 30px; 
+    border: 2px solid #eee; overflow: hidden; margin-bottom: 50px;}
+.content_area .center .task .preserve dt{font-size: 1.5rem; font-weight: bold; text-align: center; border-bottom: 2px solid #ccc; 
+    padding-bottom: 10px; margin-bottom: 50px;}
+.content_area .center .task .preserve dd{text-align: center;}
+/* .content_area .center .task .preserve dd:nth-of-type(1){float: left;}
+.content_area .center .task .preserve dd:nth-of-type(2){float: right;} */
+.content_area .center .task .preserve dd p{font-size: 1.25rem;}
+.content_area .center .task .preserve dd img{width: 550px; margin-bottom: 20px;}
+
+.content_area .center .task ul{width: 1200px; display: flex; justify-content: space-between; gap: 30px;}
+.content_area .center .task ul li{border-radius: 30px; padding: 30px; border: 2px solid #eee; text-align: center;}
+.content_area .center .task ul li img{width: 550px; margin-bottom: 20px;}
+.content_area .center .task ul li p{font-size: 1.5rem; font-weight: bold;}
+
+
+
+
+.content_area .center .performance{position: relative; width: 2000px; top: 0; left: 50%; transform: translateX(-50%);
+    background: url(../images/content2/bee_back.jpg) no-repeat; margin-bottom: 200px; padding: 100px 0;}
+.content_area .center .performance .perform_inner{width: 1400px; margin: 0 auto;}
+.content_area .center .perform_inner h4{font-size: 2rem; margin-bottom: 150px;}
+.content_area .center .perform_inner dl{margin-bottom: 150px; width: 600px;}
+.content_area .center .perform_inner dl dt{font-size: 1.5rem; font-weight: 500; border-bottom: 2px solid #ddd; 
+    padding-bottom: 10px; margin-bottom: 30px;}
+.content_area .center .perform_inner dl dd{font-size: 1rem; margin-bottom: 10px;}
+.content_area .center .perform_inner dl dd span{font-weight: bold;}
+.content_area .center .perform_inner div p{font-size: 1.5rem; margin-bottom: 15px; text-align: center;}
+.content_area .center .perform_inner div ul{display: flex;}
+
+
+.content_area .center .rc_history{ width: 1400px; margin: 0 auto; margin-bottom: 200px;}
+.content_area .center .rc_history h4{font-size: 2rem; margin-bottom: 200px;}
+.content_area .center .rc_history div{width: 1300px; display: flex; justify-content: space-between; margin-bottom: 100px;}
+.content_area .center .rc_history div:nth-of-type(1),.content_area .center .rc_history div:nth-of-type(3){margin-left: 100px;}
+.content_area .center .rc_history div img{box-shadow: 2px 2px 15px rgb(0, 0, 0, .2);}
+.content_area .center .rc_history div:nth-of-type(1) dl{padding-top: 105px;}
+.content_area .center .rc_history div:nth-of-type(2) dl{padding-top: 205px;}
+.content_area .center .rc_history div:nth-of-type(3) dl{padding-top: 140px;}
+.content_area .center .rc_history div dt{border-bottom: 2px solid #ddd; padding-bottom: 10px; margin-bottom: 30px;
+    font-size: 1.5rem; font-weight: 500;}
+.content_area .center .rc_history div dd{margin-bottom: 10px; font-size: 1rem;}
+.content_area .center .rc_history div dd span{font-weight: bold;}

@@ -1,0 +1,4 @@
+#section0 div{position: relative;}
+#section0 div h2{font-size: 10rem; font-weight: bold; color: #B04040;}
+#section0 div p{font-size: 3rem; font-weight: 100; color: #333; font-style: italic; position: absolute; top: 65%; left: 50%;
+    transform: translateX(-50%);}

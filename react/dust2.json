@@ -1,0 +1,10 @@
+{
+"DESCRIPTION" : {"GNFD_DAY":"주의보발령일수","MAX_DNSTY":"최대농도","ALARM_CNT":"경보발령횟수","YEAR":"년도","PREPAR_CALL_DAY":"주의보예비단계발령일수","PREPAR_CALL_CNT":"주의보예비단계발령횟수","ALARM_DAY":"경보발령일수","GNFD_CNT":"주의보발령횟수"},
+"DATA" : [
+{"prepar_call_cnt":"0","alarm_day":"0","gnfd_cnt":"5","prepar_call_day":"0","max_dnsty":"157","gnfd_day":"10","alarm_cnt":"0","year":"2017"},
+{"prepar_call_cnt":"0","alarm_day":"0","gnfd_cnt":"0","prepar_call_day":"0","max_dnsty":null,"gnfd_day":"0","alarm_cnt":"0","year":"2016"},
+{"prepar_call_cnt":"1","alarm_day":"0","gnfd_cnt":"6","prepar_call_day":"1","max_dnsty":"95","gnfd_day":"8","alarm_cnt":"0","year":"2015"},
+{"prepar_call_cnt":"14","alarm_day":"0","gnfd_cnt":"6","prepar_call_day":"27","max_dnsty":"112","gnfd_day":"13","alarm_cnt":"0","year":"2014"},
+{"prepar_call_cnt":"3","alarm_day":"0","gnfd_cnt":"1","prepar_call_day":"4","max_dnsty":"94","gnfd_day":"1","alarm_cnt":"0","year":"2013"}
+]
+}

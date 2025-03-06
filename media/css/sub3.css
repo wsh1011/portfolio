@@ -1,0 +1,277 @@
+/* 와이드 pc  */
+
+	
+.videoBox{width:100%;height:100%; overflow:hidden; position:absolute}
+
+#imgBG{
+	position:fixed; /*고정=>fixed/ 스크롤처리=>absolute */
+   left:50%;
+   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+   width:auto;
+   min-width:100%; /*동영상 너비를 꽉차게*/
+   height:auto;
+   min-height:100%; /*동영상 높이를 꽉차게*/
+  transform:translateX(-50%) translateY(-50%);
+   z-index:-100;
+}
+
+.down{display: block; font-size: 20px; position: absolute; 
+   left:50%; transform: translateX(-50%); bottom: 15%; text-align: center;
+  animation:ani 1s infinite  alternate;}
+.down span{display: block; padding-top: 15px;}
+@keyframes ani {
+	0% {  opacity:1; color:#fff;}
+	100% { opacity:0.8; color:#888;}
+}	
+	
+#content{width:100%; margin:0; background:rgba(0,0,0,.8); position: relative;}
+/* #content h2{position: absolute; top: -500px; font-family: "Young Serif", serif; 
+   width: 100%; text-align: center; font-size: 4em; color: #fff; text-shadow: 3px 3px 20px rgba(0,0,0,.4);
+} */
+
+
+
+/* h2제목 효과 */
+.title_a { 
+   position: absolute; top: -500px; left: 50%; transform: translateX(-50%); 
+   text-shadow: 3px 3px 20px rgba(0,0,0,.4);
+   font-family: "Young Serif", serif; 
+   font-weight: 200;
+   color: #fff;
+ }
+ 
+
+ .logo { font-size: 5rem; }
+ .mark { 
+   border-bottom: 4px solid #D63637; 
+   width: 2rem;
+   position: absolute;
+   top: .5rem;
+   left: 0.25rem;
+   transform: translate3d(0, 0, 0);
+   animation: mark-anim 10s infinite cubic-bezier(0.55, 0, 0.1, 1);
+ }
+ 
+
+ .r,
+ .a,
+ .v,
+ .e { will-change: margin-left, margin-right; }
+ 
+ .r { 
+   margin-left: 0.25rem;
+   margin-right: 0.25rem;
+   animation: r-anim 10s infinite cubic-bezier(0.55, 0, 0.1, 1);
+ }
+ 
+ .a {
+   margin-left: 0.5rem;
+   margin-right: 0.5rem;
+   animation: a-anim 10s infinite cubic-bezier(0.55, 0, 0.1, 1);
+ }
+ 
+ .v { 
+  margin-left: 1rem;
+  margin-right: 1rem; 
+  animation: v-anim 10s infinite cubic-bezier(0.55, 0, 0.1, 1);
+}
+ 
+  .e { 
+    margin-left: 2rem;
+    margin-right: 3rem; 
+    animation: e-anim 10s infinite cubic-bezier(0.55, 0, 0.1, 1);
+  }
+  
+ /* .s2 { 
+   margin-left: 1rem;
+   margin-right: 1rem;
+   animation: s2-anim 10s infinite cubic-bezier(0.55, 0, 0.1, 1);
+ }
+ 
+ .e2 { 
+   margin-left: 2rem;
+   margin-right: 3rem;
+   animation: e2-anim 10s infinite cubic-bezier(0.55, 0, 0.1, 1);
+ }
+  */
+ 
+ @keyframes mark-anim {
+   0%, 25%, 100% { 
+     left: 1.5%;
+   }
+   50%, 75%  {
+     left: 92%;
+   }
+ }
+ 
+ 
+ @keyframes r-anim {
+   0%, 25%, 100% { 
+     margin-left: 0.25rem;
+     margin-right: 0.25rem;
+   }
+   50%, 75%  {
+     margin-left: 3rem;
+     margin-right: 2rem;
+   }
+ }
+ 
+ @keyframes a-anim {
+   0%, 25%, 100% { 
+     margin-left: 0.5rem;
+     margin-right: 0.5rem;
+   }
+   50%, 75%  {
+     margin-left: 1rem;
+     margin-right: 1rem; 
+   }
+ }
+ 
+ @keyframes v-anim {
+   0%, 25%, 100%   { 
+     margin-left: 1rem;
+     margin-right: 1rem;
+   }
+   50%, 75% {
+     margin-left: 0.5rem;
+     margin-right: 0.5rem;
+   }
+ }
+
+ @keyframes e-anim {
+  0%, 25%, 100%   { 
+    margin-left: 2rem;
+    margin-right: 3rem;
+  }
+  50%, 75% {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+}
+
+/*tripMusic 스와이퍼*/
+ /* .swiper {
+    width: 35%;
+    height: 100vh;
+  }
+  .swiper-slide {
+    text-align: center;
+    background: lightseagreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .swiper-slide:nth-of-type(1){border: 3px solid lightblue;}
+  .swiper-slide:nth-of-type(2){border: 3px solid lightcoral;}
+  .swiper-slide:nth-of-type(3){border: 3px solid lightgreen;}
+  .swiper-slide:nth-of-type(4){border: 3px solid lightsalmon;} */
+
+
+
+/* ALBUM */
+
+/* @keyframes rotation {
+    100% {transform: rotate(360deg);}
+  } */
+  /* @keyframes eq {
+    100% {outline-offset: 100px;}
+  }   */
+   /* outline-offset은 outline에서의 거리 */
+  
+  .tripMusic{width: 90%; margin: 0 auto; height: 950px; border: 1px solid red;}
+  
+  .tripMusic .playerWrap{}
+  
+ 
+  .tripMusic .playerWrap .playerImg img {width: 100%; transition: all .2s; } 
+  .tripMusic .playerWrap .playerImg img.current{
+    /* filter: grayscale(0); */
+    outline: 5px solid rgba(255,255,255,.5);position: relative; z-index: 10;}
+
+  /* .tripMusic .playerWrap .playerImg img{filter: grayscale(100%);} */
+
+  .tripMusic .playerWrap .Info{text-align: center; padding: 5vw 0 3vw 0;}
+  .tripMusic .playerWrap .Info h3{font-size:4rem; font-family: "Young Serif", serif;
+    color: #f8f8f8; margin-bottom: 1vw;}
+  .tripMusic .playerWrap .Info p{font-size: 1.1rem; color: #f8f8f8; display: inline;}
+  .tripMusic .playerWrap .playInfo{padding: 3% 5% 1% 5%; border: 1px solid #fff; border-radius: 10px; background: rgba(255,255,255,.9);}
+  .tripMusic .playerWrap .playInfo p{font-size:2rem; font-weight: 300; font-style: italic;}
+  .tripMusic .playerWrap .playInfo ul{border-top: 2px dashed #ccc; border-bottom: 2px solid #ccc; padding: 1vw 0; margin-bottom: 1%;}
+  .tripMusic .playerWrap .playInfo ul li{font-size: 1.3rem; margin-bottom: .5vw;}
+  .tripMusic .playerWrap .playInfo ul a.curr{border-bottom: 2px solid #D63637;}
+  
+
+  .tripMusic .playerWrap .playInfo .audio_control{}
+  .tripMusic .playerWrap .playInfo .audio_control .playerControler{width: 200px; margin: 0 auto; display: flex; justify-content: space-between;}
+  .tripMusic .playerWrap .playInfo .audio_control .playerControler a{padding: 5%;}
+  .tripMusic .playerWrap .playInfo .audio_control .playerControler i{font-size: 1.3em; color: #333; background:none;
+      cursor: pointer;}
+
+  #content .tripMusic .playerWrap{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:.4fr .6fr;
+    gap: 20px;
+    grid-template-areas:
+          'a b'
+          'a c';}
+  #content .tripMusic .playerWrap>div:nth-of-type(1){grid-area: a;}
+  #content .tripMusic .playerWrap .info{grid-area: b;}
+  #content .tripMusic .playerWrap .playInfo{grid-area: c;}
+
+
+
+
+
+
+
+  /* spotlightOn 영역 */ 
+#content .spotlightOn .trail .trailcontain .contentArea a:hover i{
+  color: rgb(255, 85, 187);}
+
+/* newReleases 영역 */
+#content .newReleases h3{color: rgb(0, 169, 255);}
+#content .newReleases .trail .trailcontain .contentArea a:hover i{
+  color: rgb(174, 222, 252);}
+#content .newReleases .trail .trailcontain .contentArea strong{
+  color: rgb(166, 255, 150);}
+#content .newReleases .trail .trailcontain .clip_part:hover .contentArea strong{
+  color: rgb(174, 222, 252);}
+#content .newReleases .trail .trailcontain .contentArea a:hover img{
+  color: rgb(12, 53, 106); border-color: rgb(12, 53, 106);
+  background: rgb(213, 255, 208); 
+  box-shadow: 0.7rem 0.7rem 0 rgb(39, 158, 255);}
+
+/* newReleases 영역 */
+#content .bestOf h3{color: rgb(237, 90, 179);}
+#content .bestOf .trail .trailcontain .contentArea p{text-align: center;}
+#content .bestOf .trail .trailcontain .contentArea a:hover i{
+  color: rgb(255, 207, 150);}
+#content .bestOf .trail .trailcontain .contentArea strong{
+  color: rgb(119, 82, 254);}
+#content .bestOf .trail .trailcontain .clip_part:hover .contentArea strong{
+  color: rgb(255, 207, 150);}
+#content .bestOf .trail .trailcontain .contentArea a:hover img{
+  color: rgb(199, 0, 57); border-color: rgb(199, 0, 57);
+  background: rgb(255, 207, 150); 
+  box-shadow: 0.7rem 0.7rem 0 rgb(255, 108, 34);}
+
+
+
+
+
+
+
+
+
+
+
+
+    
+

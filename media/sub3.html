@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bernina_about</title>
+<link rel="shortcut icon"  type="image/x-icon"  href="./favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="./app_icon.png">
+<link rel="apple-touch-startup-image" href="./startup.png">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- <link rel="stylesheet" href="./css/swiper.min.css"> -->
+<link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/sub3.css">
+
+
+</head>
+
+<body>
+   <div id="skipNav">
+	   <a href="#content">본문바로가기</a>
+	   <a href="#gnb">네비게이션바로가기</a>
+   </div>
+
+<div id="wrap">
+	<div class="videoBox">
+			<img src="./images/sub3_big.jpg" id="imgBG">
+			<a class="down" href="#"><img src="./images/scroll_down.svg" alt=""><span>SCROLL DOWN</span></a>
+	</div>
+	
+	<header id="headerArea">
+		<div class="headerInner">
+			<h1><a href="./index.html">berninaLogo</a></h1>
+			<a class="menuOpen menu_ham" href="#">
+			  <span>메뉴열기</span>
+			</a>
+			<nav id="gnb">
+				 <h2 class="hidden">네비게이션영역</h2> 
+				 <ul>
+					  <li><h3><a href="./sub1.html?num=1">ABOUT</a></h3></li>
+					  <li><h3><a href="./sub2.html?num=2">TICKETS</a></h3></li>
+					  <li><h3><a href="./sub3.html?num=3">TRAVEL</a></h3></li>
+					  <li><h3><a href="./sub4.html?num=4">GALLERY</a></h3></li>
+					  <li><h3><a href="./sub5.html?num=5">FAQ</a></h3></li>
+				 </ul>
+			</nav>
+		  </div>
+	  </header>
+	
+	<article id="content">
+		<h2>
+			<div class="title_a flex flex-center">
+				<div class="logo center mx-auto relative">
+				  <div class="mark"></div>
+				  <span class="t">T</span> 
+				  <span class="r">R</span> 
+				  <span class="a">A</span> 
+				  <span class="v">V</span>
+				  <span class="e">E</span>
+				  <span class="l">L</span>
+			    </div>
+			</div>
+		</h2>
+
+		<section class="tripMusic">
+			<div class="playerWrap">
+				<!-- <div class="swiper mySwiper">
+					<ul class="swiper-wrapper playerImg">
+						<li class="swiper-slide"><img src="./images/sub3/tic_img1.png" alt=""></li>
+						<li class="swiper-slide"><img src="./images/sub3/tic_img2.png" alt=""></li>
+						<li class="swiper-slide"><img src="./images/sub3/tic_img3.png" alt=""></li>
+						<li class="swiper-slide"><img src="./images/sub3/tic_img4.png" alt=""></li>
+					</ul>
+					<div class="swiper-scrollbar"></div>
+				</div> -->
+				<div class="playerImg">
+					<img src="./images/sub3/tic_img.png" alt="플레이리스트 음악 이미지">
+					<span></span>
+				</div>
+				<div class="Info">
+					<h3>PLAYLIST</h3>
+					<p>These are song for train ride. These are song for train ride</p>
+					<p>These are song for train ride. These are song for train ride</p>
+					<p>These are song for train ride. These are song for train ride</p>
+				</div>
+				<div class="playInfo">
+					<p>a playlist for train rides</p>
+					<ul>
+						<li><a href="#a1" onclick="changeSound(1);" class="curr">On the train ride home <span>. . .</span> <span>. . .</span> <span>. . .</span> The Paper Kites</a></li>
+						<li><a href="#a2" onclick="changeSound(2);">Last Train Home <span>. . . . . . . . . . . . .</span> <span>. . .</span> <span>. . .</span> Ryan Star</a></li>
+						<li><a href="#a3" onclick="changeSound(3);">Cookie <span>. . . . . . . . . . . . . . . .</span> <span>. . .</span> <span>. . .</span> The Paper Kites</a></li>
+						<li><a href="#a4" onclick="changeSound(4);">Hurt <span>. . . . . . . . . . . . . . . . . .</span> <span>. . .</span> <span>. . .</span> The Paper Kites</a></li>
+					</ul>
+					<div class="audio_control">                              
+						<audio id="main_audio" src="./music/music1.mp3"></audio>            
+						<div class="playerControler">
+							<a href="#" id="controlPrev"><i title="이전곡" class="fa-solid fa-backward"></i></a>
+							<a href="#" id="controlPlay"><i title="재생" class="fa-solid fa-play"></i></a>
+							<a href="#" id="controlNext"><i title="다음곡" class="fa-solid fa-forward"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>	
+
+
+
+
+
+
+
+
+
+			
+			<section class="spotlightOn" style="display: block;">
+				<div class="trail">
+					<div class="trailTop">
+						<h3>Spotlight On</h3>
+						<p>Your access to Cirque du Soleil content, all in one place. At Cirque du Soleil, we offer an escape from everyday life through the delight and whimsy of our shows. Let us welcome you into our world where awe-inspiring show footage and fan favorite videos will transport you. Just for you, from us. Enjoy!</p>
+					</div>
+					<ul class="trailcontain">
+						<li class="clip_part">
+							<div class="contentArea">
+								<div class="imgPart">
+									<a class="popup-youtube" href="https://www.youtube.com/watch?v=rdPyUeHA5wg">
+										<img src="./images/sub/sub3_trailer5.jpg" alt="">
+										<i class="fa-brands fa-youtube" aria-hidden="true"></i>
+									</a>
+								</div>
+								<strong>Cirque du Soleil-Corteo</strong>
+								<p>The clown Mauro envisions that his own burial will take place amid a carnival atmosphere and be attended by tender angels. The show contrasts the grand with the intimate, the silly with the tragic, and the beauty of perfection with the appeal of imperfection. It also emphasizes the strength and vulnerability of the clown as well as his knowledge and generosity to represent the aspect of humanity that exists in each of us. Corteo is guided through a timeless ceremony in which fantasy teases reality with music, which is both poetic and mischievous.</p>
+							</div>
+						</li>
+						<li class="clip_part">
+							<div class="contentArea">
+								<div class="imgPart">
+									<a class="popup-youtube" href="https://www.youtube.com/watch?v=F5Eqbme4cRU">
+										<img src="./images/sub/sub3_trailer6.jpg" alt="">
+										<i class="fa-brands fa-youtube" aria-hidden="true"></i>
+									</a>
+								</div>
+								<strong>Cirque du Soleil-LUZIA</strong>
+								<p>Join us as we take you on a journey into the colorful and fantastical world of LUZIA, set in a make-believe Mexico, where you will be treated to stunning visual surprises and breathtaking acrobatic performances. LUZIA deftly guides you through the locations, people, and sounds of both classical and contemporary Mexico, taking you from urban locations like an old movie set and a smoke-filled dance hall to the beach and barren desert.</p>
+							</div>
+						</li>
+						<li class="clip_part">
+							<div class="contentArea">
+								<div class="imgPart">
+									<a class="popup-youtube" href="https://www.youtube.com/watch?v=Ju37Y1F4ylc">
+										<img src="./images/sub/sub3_trailer7.jpg" alt="">
+										<i class="fa-brands fa-youtube" aria-hidden="true"></i>
+									</a>
+								</div>
+								<strong>Cirque du Soleil-"O"</strong>
+								<p>"O" celebrates the beauty of theatre by weaving a tapestry of creativity, surrealism, and romantic theatre. The grace of water and the idea of infinity inspire world-class divers, synchronized swimmers, and acrobats to create an experience that is simply magnificent.</p>
+							</div>
+						</li>
+						<li class="clip_part">
+							<div class="contentArea">
+								<div class="imgPart">
+									<a class="popup-youtube" href="https://www.youtube.com/watch?v=ffaNc8ejeN0">
+										<img src="./images/sub/sub3_trailer8.jpg" alt="">
+										<i class="fa-brands fa-youtube" aria-hidden="true"></i>
+									</a>
+								</div>
+								<strong>Cirque du Soleil-BAZZAR</strong>
+								<p>Cirque du Soleil BAZZAR is an eclectic lab of endless invention where a joyous troupe of acrobats, dancers, and musicians create an awe-inspiring display. They work together to create a quirky one-of-a-kind world under the direction of their maestro. The dynamic company reimagines, rebuilds, and reinvents vibrant scenarios in a setting where the unpredictable is anticipated in an artistic, athletic game of order and disorder. Come and take up residence in this marketplace of enthusiasm and artistic fellowship. You never know, the story's conclusion might only be the beginning!</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+		
+	</article>
+
+
+
+	
+	<footer id="footerArea">
+        <div class="footerInner">
+			<img src="./images/logo_top.png" alt="하단로고">
+			<address>Contact<br>
+			sche Bahn AG Bahnhofstrasse 25 CH - 7001 Chur</address>
+			<p>© Rhaetian Railway Inc Legal detailsPrivacy policyTerms and conditions of use</p>
+		</div>	
+		<a class="topMove" href="#">top</a>
+	</footer>
+</div>	
+
+<script src="./js/jquery-1.12.4.min.js"></script>
+<script src="./js/jquery-migrate-1.4.1.min.js"></script>
+
+<!-- <script src="./js/swiper.min.js"></script> -->
+<!-- <script src="./js/swiper-bundle.min.js"></script>
+<script>
+	var swiper = new Swiper(".mySwiper", {
+      direction: "vertical",
+      scrollbar: {
+        el: ".swiper-pagination",
+        hide: true
+      },
+	  slidesPerView: 3,
+	  //loop: true,
+	  centeredSlides: true,
+	
+    });
+</script> -->
+
+<script src="./js/common.js"></script>
+<script src="./js/sub_img_back.js"></script>
+<script src="./js/sub3.js"></script>
+
+</body>
+</html>
